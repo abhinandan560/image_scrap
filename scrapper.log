@@ -1,0 +1,57 @@
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.0.105:5000/ (Press CTRL+C to quit)
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\AP00796665\Anaconda3\envs\webscrapping_env\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\AP00796665\Anaconda3\envs\webscrapping_env\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\AP00796665\Anaconda3\envs\webscrapping_env\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\AP00796665\Anaconda3\envs\webscrapping_env\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\AP00796665\PycharmProjects\imagescrapping\app.py", line 17, in homepage
+    return render_template("index.html")
+  File "C:\Users\AP00796665\Anaconda3\envs\webscrapping_env\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\AP00796665\Anaconda3\envs\webscrapping_env\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\AP00796665\Anaconda3\envs\webscrapping_env\lib\site-packages\jinja2\environment.py", line 1289, in render
+    self.environment.handle_exception()
+  File "C:\Users\AP00796665\Anaconda3\envs\webscrapping_env\lib\site-packages\jinja2\environment.py", line 924, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\AP00796665\PycharmProjects\imagescrapping\templates\index.html", line 1, in <module>
+    {% extends 'base.html' %}
+  File "C:\Users\AP00796665\Anaconda3\envs\webscrapping_env\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\AP00796665\Anaconda3\envs\webscrapping_env\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2023 00:10:41] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2023 00:10:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.0.105:5000/ (Press CTRL+C to quit)
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.0.105:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2023 00:15:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2023 00:15:26] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2023 00:15:26] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:root:HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=iphone11&sxsrf=AJOqlzUuff1RXi2mm8I_OqOwT9VjfIDL7w:1676996143273&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiq-qK7gaf9AhXUgVYBHYReAfYQ_AUoA3oECAEQBQ&biw=1920&bih=937&dpr=1 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:997)')))
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2023 00:15:36] "POST /get_images HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.0.105:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2023 00:17:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2023 00:17:16] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2023 00:17:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2023 00:17:27] "POST /get_images HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.0.105:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2023 00:22:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2023 00:22:55] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2023 00:22:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/Mar/2023 00:23:14] "POST /get_images HTTP/1.1" 200 -
